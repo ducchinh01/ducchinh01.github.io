@@ -14,6 +14,7 @@ body {
   height: 600px;
   width: 1400px;
   text-align: center;
+  
 
 .menu {
    
@@ -21,7 +22,7 @@ body {
      padding: 0px;
      list-style: none;
      position: absolute ;
-     background:#78b908;
+     background:#6ec2d5;
      margin : 0px 500px 0px 435px;
      width: 500px;
      border-radius: 10px;
@@ -48,16 +49,16 @@ body {
 
    li:hover ul{
      display: block;
+     background: #ff0dae;
    }
-   li:hover{
-     background:white;
-   }
+  
 
   }
 }
 
 .aaa {
   margin: 250px;
+ text-decoration: none;
 ul{
  padding: 10px 0px 10px 0px;
 
@@ -65,20 +66,97 @@ ul{
   padding: 10px 0px 10px 0px;
 
   h1{
-    font-size: 100px;
-    color: rgb(255, 255, 255);
-    margin: 60px;
-  
-  }
-  p{
     font-size: 50px;
-    color: rgb(101, 105, 101);
-    padding-bottom: 40px;
+    color: rgb(255, 255, 255);
+    margin: 100px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive, 'Bad Script';
+  padding: 25px auto;
+  text-shadow: 0 0 26px #14fcfc;
+  }
+  h1 span{
+    padding: 10px auto;
   }
 
+  h1 span::after{
+    content: attr(data-text);
+    position: absolute;
+    z-index: -1;
+    color: #14fcfc;
+  }
+
+ h5{
+   margin: 0;
+   padding: 0;
+   color: #111;
+   font-size: 40px;
+   display: flex;
+   justify-content: center;
+  align-items: center;
+  font-family: 'Bad Script', cursive;
+  
+ }
+
+ h5 span{
+   display: table-cell;
+   margin: 0;
+   padding: 0;
+   animation: animate 2s linear infinite;
+ }
+
+h5 span:nth-child(1) {
+animation-delay: 0s ;
+}
+
+h5 span:nth-child(2) {
+  animation-delay: 0.25s ;
+  }
+
+  h5 span:nth-child(3) {
+    animation-delay: 0.5s ;
+    }
+
+    h5 span:nth-child(4) {
+      animation-delay: 0.75s ;
+      }
+
+      h5 span:nth-child(5) {
+        animation-delay: 1s ;
+        }
+
+        h5 span:nth-child(6) {
+          animation-delay: 1.25s ;
+          }
+
+          h5 span:nth-child(7) {
+            animation-delay: 1.5s ;
+            }
+
+@keyframes animate{
+  0%,100%{
+    color: #fff;
+    filter: blur(2px);
+    text-shadow: 0 0 10px #14fcfc,
+                0 0 20px #14fcfc,
+                0 0 40px #14fcfc,
+                0 0 80px #14fcfc,
+                0 0 120px #14fcfc,
+                0 0 200px #14fcfc,
+                0 0 300px #14fcfc,
+                0 0 400px #14fcfc;
+
+  }
+  5%,95%{
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+}
 
 a{
-
+  margin: 40px;
   position: relative;
   display: inline-block;
   padding: 15px 30px;
@@ -161,15 +239,16 @@ a span:nth-child(3){
    }
  }
    .footer{
-    height: 500px;
-    background: #97c645;
+    height: 300px;
+    background: #709ba4;
     width: 1400px;
+    padding-left: 20px ;
 
 p{
   float:left; 
   color:khaki;
   margin-top: 50px;
-  padding-left: 20px ;
+  
 }
 
 
@@ -185,7 +264,7 @@ p{
         margin: 10px;
         border-radius: 30%;
       box-shadow: 0 5px 15px -5px #00000070;
-      color: #97c645;
+      color: #709ba4;
       overflow: hidden;
       position: relative;
 
@@ -204,7 +283,7 @@ p{
        position: absolute;
        width: 120%;
        height: 120%;
-       background: #97c645;
+       background: #709ba4;
        transform: rotate(45deg);
        left: -110%;
        top: 90%;
