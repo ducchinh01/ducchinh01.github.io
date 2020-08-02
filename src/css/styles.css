@@ -1,8 +1,3 @@
-.main {
-  height: 600px;
-  width: 1400px;
-  background-color: blue; }
-
 * {
   margin: 0px;
   padding: 0px;
@@ -10,12 +5,12 @@
 
 body {
   text-decoration: none; }
-  body .test {
+  body .container {
     width: 71.42857%;
     height: 600px;
     width: 1400px;
     text-align: center; }
-    body .test .menu ul {
+    body .container .menu ul {
       padding: 0px;
       list-style: none;
       position: absolute;
@@ -23,21 +18,20 @@ body {
       margin: 0px 500px 0px 435px;
       width: 500px;
       border-radius: 10px; }
-    body .test .menu li {
+    body .container .menu li {
       padding: 0px 5px 2px 5px;
       display: inline-block;
-      list-style: none;
       transition: all 1s;
       -moz-transion: all 1s;
       -webkit-transion: all 0.5s;
       position: relative; }
-    body .test .menu a {
+    body .container .menu a {
       display: block;
       color: black;
       text-decoration: none;
       padding: 20px 5px 20px 5px;
       font-size: 20px; }
-    body .test .menu li:hover ul {
+    body .container .menu li:hover ul {
       display: block;
       background: #ff0dae; }
   body .aaa {
@@ -56,7 +50,8 @@ body {
           align-items: center;
           font-family: cursive, 'Bad Script';
           padding: 25px auto;
-          text-shadow: 0 0 26px #14fcfc; }
+          text-shadow: 0 0 26px #14fcfc;
+          list-style: none; }
         body .aaa ul li h1 span {
           padding: 10px auto; }
         body .aaa ul li h1 span::after {

@@ -9,8 +9,7 @@ body {
   text-decoration: none;
   
 
-.test  {
-  width: percentage(5/7);
+.container  {
   height: 600px;
   width: 1400px;
   text-align: center;
@@ -26,13 +25,13 @@ body {
      margin : 0px 500px 0px 435px;
      width: 500px;
      border-radius: 10px;
+    
      
    }
 
    li {
      padding: 0px 5px 2px 5px;
      display: inline-block;
-     list-style: none;
   	transition: all 1s ;
   	-moz-transion: all 1s ;
   	-webkit-transion: all 0.5s ;
@@ -51,8 +50,6 @@ body {
      display: block;
      background: #ff0dae;
    }
-  
-
   }
 }
 
@@ -75,6 +72,7 @@ ul{
   font-family: cursive, 'Bad Script';
   padding: 25px auto;
   text-shadow: 0 0 26px #14fcfc;
+  list-style: none;
   }
   h1 span{
     padding: 10px auto;
@@ -238,21 +236,20 @@ a span:nth-child(3){
 
    }
  }
-   .footer{
+.footer{
     height: 300px;
     background: #709ba4;
     width: 1400px;
     padding-left: 20px ;
 
-p{
+  p{
   float:left; 
   color:khaki;
   margin-top: 50px;
   
 }
 
-
-    .footer-sub{
+.footer-sub{
       position: absolute;
       text-align: center;
       margin: 170px 10px 10px -10px;
@@ -293,7 +290,6 @@ p{
        top: -10%;
        left: -10%;
      }
-
     @keyframes aaa {
       0%{
         left: -110%;
@@ -310,5 +306,7 @@ p{
     }
 
     }
+
    }
+
 }
